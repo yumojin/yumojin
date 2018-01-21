@@ -2,11 +2,18 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<?php include "inc/links.php";?>
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Spectral+SC|Mrs+Saint+Delafield" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 	<title>Get to Know Shakespeare</title>
 </head>
 <body>
-	<?php include "inc/header.php";?>
+	<div class="subscribe">
+	<h1><a href="index.php">William Shakespeare</a></h1>
+	<form method="post" action="contacts-processor.php">
+		<input class="textinput" type="email" name="email" id="email" placeholder="Enter Email to Receive Newsletter" size="35" required>
+		<input type="submit" value="&#10168" class="button">
+	</form>
+</div>
 	<div class="background">
 	    <br>
 	    "It is not in the stars to hold our destiny but in ourselves."
@@ -15,8 +22,16 @@
 	<map name="spmap">
 	  <area shape="circle" coords="145,120,50" alt="colophon" href="colophon.php">
 	</map>
-	<?php include "inc/nav.php";?>
-	<?php include "inc/scripts.php";?>
+	  <nav>
+    <ul>
+      <li class="item"><a href="index.php">Welcome</a></li>
+      <li class="item"><a href="early_life.php">Early Life</a></li>
+      <li class="item"><a href="career.php">Career</a></li>
+      <li class="item"><a href="work.php">Works and Impact</a></li>
+    </ul>
+  </nav>
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/menu-highlighter.js"></script>
 
 </body>
 </html>
