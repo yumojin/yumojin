@@ -329,7 +329,7 @@ nav a {
     -moz-column-gap: 10px;
     column-gap: 10px;
     margin-top: 10px;
-    z-index: -2;
+    z-index: -20;
     overflow: hidden;
 }
 
@@ -338,7 +338,6 @@ nav a {
     height: auto;
     transition: 500ms;
     margin-bottom: 10px;
-    opacity: 0.8;
     page-break-inside: avoid; /* For Firefox. */
     -webkit-column-break-inside: avoid; /* For Chrome & friends. */
     break-inside: avoid; /* For standard browsers like IE. :-) */
