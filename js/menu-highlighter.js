@@ -8,7 +8,7 @@ function currentFile() {
 thisFile = currentFile();
 
 if ( thisFile == "" ) {
-	thisFile = "index.php"
+	thisFile = "index.html"
 }
 
 $("nav a").each( function() {
