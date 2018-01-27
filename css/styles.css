@@ -46,22 +46,6 @@ div ul {
     margin-left: 2rem;
     background-color: #fff;
     color: #000;
-  
-    &__link {
-      display: block;
-      color: #ddd; 
-      text-decoration: none;
-      font-weight: 400;
-      
-      &:hover {
-        background-color: #aaa;
-      }
-    
-       &.active {
-        color: black;
-        background-color: rgba(0,0,0,0.1);
-       }
-    }
 }
 
 .navigation ol, ul {
