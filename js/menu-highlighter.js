@@ -1,18 +1,35 @@
-function currentFile() {
-	currentURL = window.location.href;
-	fileNameIndex = currentURL.lastIndexOf("/") + 1;
-	currentFileName = currentURL.substr(fileNameIndex);
-	return currentFileName;
-}
+$(document).ready(function() {
+		$('a[href*=#]').bind('click', function(e) {
+				e.preventDefault(); // prevent hard jump, the default behavior
 
-thisFile = currentFile();
+				var target = $(this).attr("href"); // Set the target as variable
 
-if ( thisFile == "" ) {
-	thisFile = "index.html"
-}
+				// perform animated scrolling by getting top-position of target-element and set it as scroll target
+				$('html, body').stop().animate({
+						scrollTop: $(target).offset().top
+				}, 800, function() {
+						location.hash = target; //attach the hash (#jumptarget) to the pageurl
+				});
 
-$("nav a").each( function() {
-	if (this.href.indexOf(thisFile) > 0) {
-		$(this).addClass("is-current");
-	}
+				return false;
+		});
 });
+
+$(window).scroll(function() {
+		var scrollDistance = $(window).scrollTop()+350;
+
+		// Show/hide menu on scroll
+		//if (scrollDistance >= 850) {
+		//		$('nav').fadeIn("fast");
+		//} else {
+		//		$('nav').fadeOut("fast");
+		//}
+	
+		// Assign active class to nav links while scolling
+		$('.page-section').each(function(i) {
+				if ($(this).position().top <= scrollDistance) {
+						$('.navigation a.active').removeClass('active');
+						$('.navigation a').eq(i).addClass('active');
+				}
+		});
+}).scroll();

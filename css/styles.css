@@ -56,7 +56,6 @@ div ul {
     z-index: 100;
     font-family: 'Roboto Mono', monospace;
     text-decoration: none;
-    -webkit-transition: color 0.1s, background-color 0.1s;
     position: relative;
     display: block;
     padding: 16px 10px;
@@ -65,27 +64,32 @@ div ul {
     font-size: 0.8rem;
     line-height: 0.5rem;
     font-weight: 900;
-    -webkit-transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
     color: #000;
 }
 
 .navigation a::before {
-    content: '';
+    content: '' ;
     display: block;
     position: absolute;
     bottom: 3px;
     left: 0;
     height: 4px;
-    width: 100%;
-    background-color: #000;
-    transform-origin: right top;
-    transform: scale(0, 1);
-    -webkit-transition: color 0.1s,transform 0.2s ease-out;
-}
-
-.navigation a:active::before, a:hover::before, a:focus::before {
+    width: 0%;
+    background-color: #fff;
     transform-origin: left top;
     transform: scale(1, 1);
+    -webkit-transition: color 0.1s,background-color 0.7s, width 0.5s, padding 0.2s ease-in;
+}
+
+.active::before {
+    content: '' !important;
+    display: block !important;
+    position: absolute !important;
+    bottom: 3px !important;
+    left: 0 !important;
+    height: 4px !important;
+    width: 100% !important;
+    background-color: #000 !important;
 }
 
 .container {
@@ -94,6 +98,7 @@ div ul {
 	padding-right: 0rem;
   width: auto;
 }
+
 
 
 /* styles for the subscription form header */
