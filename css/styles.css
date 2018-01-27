@@ -40,11 +40,9 @@ div ul {
 
 .navigation {
     position: fixed;
-    z-index: 100;
     top: 14.5rem;
     width: 14.5rem;
     margin-left: 2rem;
-    background-color: #fff;
     color: #000;
 }
 
@@ -55,6 +53,7 @@ div ul {
 }
 
 .navigation a {
+    z-index: 100;
     font-family: 'Roboto Mono', monospace;
     text-decoration: none;
     -webkit-transition: color 0.1s, background-color 0.1s;
@@ -71,6 +70,7 @@ div ul {
 }
 
 .navigation a::before {
+    content: '';
     display: block;
     position: absolute;
     bottom: 3px;
