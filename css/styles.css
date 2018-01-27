@@ -78,11 +78,13 @@ nav li {
 nav a:hover, a:focus, a:active {
     color: #999;
     text-decoration: none;
+    display: block;
 }
 
 nav a {
     font-family: 'Roboto Mono', monospace;
     text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
     position: relative;
     display: block;
     padding: 16px 10px;
@@ -91,6 +93,7 @@ nav a {
     font-size: 0.8rem;
     line-height: 0.5rem;
     font-weight: 900;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
     color: #000;
 }
 
