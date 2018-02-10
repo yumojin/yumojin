@@ -39,7 +39,7 @@ div ul {
 /* styles for navigation bar */
 
 .navigation {
-    margin-top: 14.5rem;
+    margin-top: 14.4rem;
     width: 14.5rem;
     margin-left: 2rem;
     color: #000;
@@ -110,7 +110,9 @@ div ul {
   	left: 0;
     z-index: 100;
 }
-
+.burger {
+    display: none;
+}
 .subscribe h1 {
 	float: left;
 	margin: 1.2rem;
@@ -184,13 +186,50 @@ img {
 }
 
 @media screen and (max-width: 479px) {
+    h2 {
+    font-size: 1.5rem;
+    font-family: 'Roboto Mono', monospace;
+  font-weight: normal;
+  padding-top: 5rem;
+}
+    .navigation {
+    display: none;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    width: 14.5rem;
+    margin-left: 6.5%;
+    color: #000;
+    -webkit-transform: translateZ(0);
+}
+    .subscribe {
+    margin: 3px;
+    width: 97%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: solid 2px;
+    }
+
+    .subscribe h1 {
+    margin-left: 11.5%;
+    margin-right: 8%;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+    .burger {
+    display: inline;
+    line-height: 67px;
+    font-size: 35px;
+    }
     .gallery { 
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
     }
     .gallery div { 
         margin: 0; 
-        width: 200px;
+
+    }
+    .container{
+        margin: 25% 6% 8rem 6%;
     }
 }
