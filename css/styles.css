@@ -39,10 +39,12 @@ div ul {
 /* styles for navigation bar */
 
 .navigation {
+    position:fixed;
     top: 14.5rem;
     width: 14.5rem;
     margin-left: 2rem;
     color: #000;
+    -webkit-transform: translateZ(0);
 }
 
 .navigation a:hover, a:focus, a:active {
