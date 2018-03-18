@@ -227,7 +227,7 @@ img {
     display: none;
     margin-top: 0rem;
     margin-bottom: 1rem;
-    width: 14.5rem;
+    width: 16rem;
     margin-left: 6.5%;
     color: #000;
     -webkit-transform: translateZ(0);
@@ -235,7 +235,7 @@ img {
     .subscribe {
     margin: 3px;
     width: 97%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 1);
     border: solid 2px;
     }
 
