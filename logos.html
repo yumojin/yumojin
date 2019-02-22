@@ -6,7 +6,18 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Lora|Roboto+Mono" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/zoom.css" rel="stylesheet">
 	<title>Mojin Yu</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88643765-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-88643765-3');
+	</script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 	<div class="subscribe">
@@ -18,23 +29,32 @@
 
 
 <div class="container">
-	<img src="images/other/eb.jpg" alt="earth burger logo" width="100%" height="auto" class="inlineimg" />
-	<h2>My logo design works</h2>
+	<img src="images/other/eb.jpg" alt="earth burger logo" width="100%" height="auto" class="inlineimg" data-action="zoom">
+	<h2>Logo design: Earth Burger</h2>
+	<h3></h3>
 	<p>
 		This is a logo design for a fantastical restaurant that only serves dishes made with lab-grown meat.
 	</p>
-	<br>
+	<img src="images/other/burger.png" alt="earth burger logo" width="100%" height="auto" class="inlineimg" data-action="zoom">
 	<h4>Production</h4>
 		<ul>
+			<li>Sketching</li>
 			<li>Adobe Illustrator</li>
 		</ul>
-	<figure>
-	<img src="images/other/burger.png" alt="earth burger logo" width="100%" height="auto" class="inlineimg" />
-	</figure>
-	<img src="images/other/1gen_logo.png" alt="earth burger logo" width="90%" height="auto"/>
+	<br>
+	<h2>Logo design: 1st Gen Society</h2>
+	<p>
+	This is a logo design for a student organization on campus.
+	</p>
+	<br>
+	<br>
+	<img src="images/other/1gen_logo.png" alt="earth burger logo" width="90%" height="auto"data-action="zoom">
+
 </div>
-<script src="http://code.jquery.com/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/menu-highlighter.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="js/zoom.js"></script>
 
 </body>
 </html>
