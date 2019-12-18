@@ -1,6 +1,10 @@
 body {
 	font-family: 'Roboto Mono', monospace;
-	font-size: 0.89rem;
+}
+
+.greeting {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.89rem;
 }
 
 h1 {
@@ -31,12 +35,22 @@ h2 {
   padding-top: 2rem;
 }
 
+h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: normal;
+}
+
 h4 {
+    font-family: 'Roboto Mono', monospace;S
 	margin: 0px;
 }
 
 p {
-max-width: 900px;
+    max-width: 800px;
+    font-family: 'Open Sans', monospace;
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
 }
 
 figure{
