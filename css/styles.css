@@ -199,6 +199,11 @@ input {
     max-height: 500px;
 }
 
+.portimg {
+    position: relative;
+    left: -80px;
+}
+
 .pageimg {
     max-width: 500px;
     width: 85%;
@@ -242,8 +247,11 @@ input {
     top:40%;
     opacity:0;
     text-align: center;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Open Sans', monospace;
+    font-size: 0.82rem;
+    line-height: 1.6;
     letter-spacing: 1px;
+    font-weight: 800;
 }
 
 .gallery a:hover .projectname{
