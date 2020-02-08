@@ -33,16 +33,19 @@ h2 {
 	font-family: 'Roboto Mono', monospace;
   font-weight: normal;
   padding-top: 2rem;
+  letter-spacing: 1px;
 }
 
 h3 {
     font-family: 'Roboto Mono', monospace;
     font-weight: normal;
+    letter-spacing: 1px;
 }
 
 h4 {
     font-family: 'Roboto Mono', monospace;S
 	margin: 0px;
+    letter-spacing: 1px;
 }
 
 p {
@@ -67,7 +70,9 @@ div ul {
 	list-style-type: square;
 	padding-left: 20px;
 	margin-top: 5px;
+    letter-spacing: 1px;
 }
+
 
 .boxlist {
     max-width: 500px;
@@ -82,6 +87,7 @@ div ul {
 .boxlist li {
     padding-left: 10px;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -223,10 +229,8 @@ input {
 }
 
 .video {
-    width:60vw;
-    height: 35vw;
-    max-width: 600px;
-    max-height: 350px;
+    width:64vw;
+    height: 36vw;
 }
 
 .gallery { 
