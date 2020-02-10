@@ -54,6 +54,8 @@ p {
     font-size: 0.82rem;
     letter-spacing: 1px;
     line-height: 1.6;
+    margin-block-end: 1.5em;
+    margin-block-start: 1.5em;
 }
 
 figure{
