@@ -7,8 +7,16 @@ body {
     font-size: 0.89rem;
 }
 
+.foot {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.69rem;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
 h1 {
-	font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 	font-size: 2.7rem;
     font-weight: normal;
 }
@@ -50,7 +58,7 @@ h4 {
 
 p {
     max-width: 800px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Open Sans', monospace;
     font-size: 0.8rem;
     letter-spacing: 1px;
     line-height: 2;
