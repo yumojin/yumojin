@@ -190,9 +190,12 @@ input {
 	margin: 1.8rem 10% 8rem 0%;
 	margin-left: 18rem;
 	padding-right: 0rem;
-  width: auto;
+    width: auto;
 }
 
+.page {
+    margin-left: 40px;
+}
 
 
 /* styles for the subscription form header */
