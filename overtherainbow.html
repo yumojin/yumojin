@@ -20,7 +20,8 @@
 </head>
 <body>
 	<div class="subscribe">
-	<h1><a href="index.html">MOJIN YU</a></h1>
+	<h1><a href="index.html">mojin yu
+	</a></h1>
 	<div class="navigation">
 			<input action="action" type="button" id="back" value="&#10229; back" onclick="window.history.go(-1); return false;" />
 	</div>
@@ -28,14 +29,47 @@
 
 
 <div class="container">
+	<div class="page">
 <video controls autoplay muted class="video">
 <source src="images/rainbow.mp4" type="video/mp4"> </video>
 <figcaption>Prototype video</figcaption>
 
 <br> <br> <br>
-<h2>- under construction -</h2>
+<h2>A  Data Problem</h2>
+<p>
+	My digital media professor told me to connect air quality sensors to Arduino, and translate the sensor data into effective representations. 
+</p>
+
+<p>
+	I thought the hardest part was over when I finally got the sensor wirings to work, but the real problem, I quickly realized, was those lines of air quality data:
+</p>
+
+    (examples)<br><br>
+    raw data output: <br>
+    12:15:40.255 -> 37 0 543<br>
+    12:32:11.969 -> 29 128 782<br><br>
+    data with added syntax: <br>
+    12:15:40.255 -> Humidity=37%, TVOC=0ppb, eCO2=543ppm.<br>
+    12:32:11.969 -> Humidity=29%, TVOC=128ppb, eCO2=782ppm.<br>
 <br>
-<img class="inlineimg" src="images/mojin-soldering.jpg" alt="a picture of me soldering"style="max-width: 700px">
+<p>
+The information shown in this format was definitely accurate, but imagine reading hundreds of lines of data like this. Without spending time searching online or asking an expert, one can’t even tell if these means “fair air quality” or “heavy pollution”. How are we supposed to interpret this? <strong>Is there a more "effective" way to inform people of the air quality condition?</strong>
+</p>
+<br>
+<img class="inlineimg" src="images/gather_data.jpg" alt="sensor"style="max-width: 400px"><figcaption>Gathering baseline data in various environments</figcaption>
+<br>
+<p>
+I solved this problem creatively by turning the data output into dynamic visual representations. Using Processing, I created an animated scene (Wizard of Oz themed!) that would gradually transition from looking peaceful to looking chaotic, in line with the air quality status. The algorism was tested with different users to make sure that the animation works as intuitively as possible. In this way, the final output format allows viewers to easily interpret the practical implications of scientific data. Good air, bad air? It only takes one glance. </p>
+<br>
+<img class="inlineimg" src="images/display2.jpg" alt="sensor"style="max-width: 400px"><figcaption>Probably not a good sign?</figcaption>
+<br>
+<p>
+I took a rather radical, nonpractical approach as it was supposed to be an art project. However, the experience really made me think and the takeaway is extremely transferable. It is not always enough to simply present “accurate information” or “scientific data”; a humanistic approach sometimes is necessary to effectively get the idea across. Especially in this day and age when crucial issues like global warming would still struggle to gain support, <strong>no information problem is solely technical. </strong>
+</p>
+
+<br>
+<img class="inlineimg" src="images/mojin-soldering.jpg" alt="a picture of me soldering"style="max-width: 400px"><figcaption>Soldering was fun.</figcaption>
+</div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/menu-highlighter.js"></script>
