@@ -2,9 +2,16 @@ body {
 	font-family: 'Roboto Mono', monospace;
 }
 
-.greeting {
+/*.greeting {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.89rem;
+}*/
+.greeting {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    font-weight: 200;
+    color: #949494;
+    letter-spacing: 1px;
 }
 
 .foot {
